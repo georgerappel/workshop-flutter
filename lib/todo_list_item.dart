@@ -10,7 +10,7 @@ class TodoListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget _listContent = Container(
+    Widget _itemContent = Container(
       padding: EdgeInsets.all(16),
       child: Row(
         children: [
@@ -26,7 +26,7 @@ class TodoListItem extends StatelessWidget {
       ),
     );
 
-    if (!dismissible) return _listContent;
+    if (!dismissible) return _itemContent;
 
     return Dismissible(
       background: Container(
@@ -52,7 +52,7 @@ class TodoListItem extends StatelessWidget {
         }
       },
       key: ValueKey(todo.id),
-      child: _listContent,
+      child: _itemContent,
     );
   }
 }
