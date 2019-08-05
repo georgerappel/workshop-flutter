@@ -24,7 +24,7 @@ class TodoController {
     return todos.where((Todo todo) => !todo.done).toList();
   }
 
-  /// List of to-dos already completed
+  /// List of to-dos waiting for completion
   static List<Todo> doneList() {
     return todos.where((Todo todo) => todo.done).toList();
   }

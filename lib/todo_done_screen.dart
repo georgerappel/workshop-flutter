@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workshop/todo_list.dart';
 
 class TodoDoneScreen extends StatefulWidget {
   @override
@@ -13,8 +14,8 @@ class _TodoDoneScreenState extends State<TodoDoneScreen> {
         title: Text("Tarefas finalizadas"),
       ),
       body: Center(
-        child: Container(
-          child: Text("Tudo feito"),
+        child: TodoList(
+          done: true,
         ),
       ),
     );
