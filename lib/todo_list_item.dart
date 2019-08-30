@@ -4,30 +4,42 @@ import 'package:workshop/todo_model.dart';
 
 class TodoListItem extends StatelessWidget {
   final Todo todo;
-  final bool dismissible;
 
-  TodoListItem(this.todo, {@required this.dismissible});
+  TodoListItem(this.todo);
+
+  Widget _simpleItemContent() {
+    return ListTile(
+      leading: Icon(Icons.work, color: todo.color, size: 24),
+      title: Text(todo.name),
+      trailing: todo.done
+          ? Icon(
+              Icons.check,
+              color: Colors.green,
+            )
+          : null,
+    );
+  }
+
+  // Widget _simpleItemContent() {
+  //   return Container(
+  //     padding: EdgeInsets.all(16),
+  //     child: Row(
+  //       children: [
+  //         Icon(Icons.work, color: todo.color, size: 24),
+  //         Padding(
+  //           padding: const EdgeInsets.all(8.0),
+  //           child: Text(
+  //             todo.name,
+  //             textAlign: TextAlign.left,
+  //           ),
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
-    Widget _listContent = Container(
-      padding: EdgeInsets.all(16),
-      child: Row(
-        children: [
-          Icon(Icons.work, color: todo.color, size: 24),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              todo.name,
-              textAlign: TextAlign.left,
-            ),
-          ),
-        ],
-      ),
-    );
-
-    if (!dismissible) return _listContent;
-
     return Dismissible(
       background: Container(
         color: Colors.green,
@@ -51,8 +63,10 @@ class TodoListItem extends StatelessWidget {
           TodoController.deleteTodo(todo);
         }
       },
+      direction:
+          todo.done ? DismissDirection.endToStart : DismissDirection.horizontal,
       key: ValueKey(todo.id),
-      child: _listContent,
+      child: _simpleItemContent(),
     );
   }
 }
