@@ -12,4 +12,5 @@ O arquivo "Apresentação Minicurso Flutter", disponibilizado em PDF e ODP, tamb
 
 - 16 de Agosto de 2019, no NCE/UFRJ, por George Rappel e Patrick Sasso, apresentação de experimentação para membros do DevMob e de outros grupos de extensão de Computação da UFRJ.
 - 22 de Agosto de 2019, no CEFET/RJ, por George Rappel e Patrick Sasso, para a turma do Curso Técnico em Informática.
-- 30 de Agosto de 2019, na Semana da Computação da UFRJ, por George Rappel e Patrick Sasso, para cerca de 20 participantes.
+- 30 de Agosto de 2019, na Semana da Computação da UFRJ, por George Rappel e Patrick Sasso,. para cerca de 20 participantes.
+- 05 de Fevereiro de 2020, no NCE/UFRJ, por George Rappel e Patrick Sasso, treinamento de membros do DevMob.
