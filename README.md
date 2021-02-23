@@ -1,8 +1,11 @@
-# Workshop de Flutter - App To-do list
+# Workshop Flutter - App To-do list
  
-Projeto em Flutter de uma To-do list, planejado para ser desenvolvido em tempo real durante o Minicurso de Flutter, ministrado pelos membros do DevMob, @georgerappel e @pksasso.
+This repository contains presentations given by me, @georgerappel, along with @pksasso for Computer Science students. The main goal is to present a basic knowledge of Dart and Flutter mobile development.
 
-Esse app é a versão ideal que nós pretendemos desenvolver durante o Minicurso, portanto podem haver diferenças entre a versão feita em sala ao vivo.
+Everything is mostly in Portuguese.
+
+The app is a simple to-do list developed live during the course.
+
 
 ## Apresentação de Slides
 
