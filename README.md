@@ -1,4 +1,4 @@
-# Workshop Flutter - App To-do list
+# Workshop Flutter - To-do list
  
 This repository contains presentations given by me, @georgerappel, along with @pksasso for Computer Science students. The main goal is to present a basic knowledge of Dart and Flutter mobile development.
 
